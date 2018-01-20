@@ -137,9 +137,9 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      complete: function(data) {
+     complete: function(data) {
         if(data.status === 200) {
-          get()
+          getAllTasks();
         }
       }
     });
